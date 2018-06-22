@@ -370,7 +370,7 @@ export default class SearchList extends Component {
           flex: 1,
           backgroundColor: this.props.searchListBackgroundColor
         }]}>
-          <Toolbar
+          {/* <Toolbar
             animatedValue={this.state.animatedValue}
 
             style={[{
@@ -383,14 +383,14 @@ export default class SearchList extends Component {
             title={this.props.title}
             textColor={this.props.titleTextColor}
             renderBackButton={this.props.renderBackButton || this._renderBackButton.bind(this)}
-          />
+          />*/}
 
           <SearchBar
             placeholder={this.props.searchInputPlaceholder ? this.props.searchInputPlaceholder : ''}
 
             onChange={this.search.bind(this)}
-            onFocus={this.onFocus.bind(this)}
-            onBlur={this.onBlur.bind(this)}
+            // onFocus={this.onFocus.bind(this)}
+            // onBlur={this.onBlur.bind(this)}
 
             onClickCancel={this.onClickCancel.bind(this)}
             cancelTitle={this.props.cancelTitle}
